@@ -1,0 +1,140 @@
+.contact-app {
+  position: relative;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 20px 50px 20px 50px;
+  margin: 20px;
+  margin-top: 40px;
+  width: auto;
+  height: auto;
+}
+.form > h1 {
+  margin-bottom: 30px;
+}
+
+.form > input,
+textarea {
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid #008080;
+}
+
+.form > textarea {
+  height: 150px;
+  max-width: 400px;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  color: rgb(0, 0, 32);
+  font-weight: BOLD;
+}
+
+.text {
+  text-align: center;
+  height: 150px;
+  max-width: 400px;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form > button {
+  padding: 20px;
+  border: none;
+  background-color: #008080;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+.form > button:hover {
+  background-color: #008080;
+}
+
+.arrow {
+  position: absolute;
+  top: -13%;
+  left: 46%;
+}
+
+@media (max-width: 450px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 20px 50px 20px 50px;
+    margin: 20px;
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  .arrow {
+    position: absolute;
+    top: -13%;
+    left: 46%;
+  }
+  .form {
+    display: flex;
+  }
+  .form > textarea {
+    height: 20px;
+    max-width: 400px;
+    min-height: 70px;
+  }
+
+  .text {
+    text-align: center;
+    height: auto;
+    margin: auto;
+  }
+
+  .form > input,
+  textarea {
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    background: #fff;
+    font-size: 16px;
+    color: rgb(0, 0, 32);
+    outline: none;
+  }
+
+  .form > button {
+    padding: 13px;
+  }
+}

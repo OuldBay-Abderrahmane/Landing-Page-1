@@ -1,0 +1,51 @@
+.header {
+  height: 85vh;
+  width: 100vw;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header > h1 {
+  margin-bottom: 50px;
+  font-size: 4rem;
+}
+.header > h2 {
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  width: 50vw;
+  font-weight: 700;
+}
+
+.header > p {
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  width: 50vw;
+}
+
+@media (max-width: 450px) {
+  .header {
+    height: 100vh;
+    width: 100vw;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+  }
+  .header > h2 {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    width: 70vw;
+    font-weight: 700;
+  }
+  .header > p {
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    width: 70vw;
+  }
+}

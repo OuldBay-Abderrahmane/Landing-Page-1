@@ -1,0 +1,207 @@
+p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.slides {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MuiSvgIcon-root {
+  background-color: #008080;
+  border-radius: 30px;
+  padding: 7px;
+  color: white;
+}
+
+.header-arrow {
+  position: absolute;
+  left: 48%;
+  top: 71%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+#fourth-page-arrow {
+  display: none;
+}
+
+#fourth-page {
+  padding-bottom: 70px;
+}
+
+/*___________________  Column Disposition Slides __________________________*/
+
+.column-slide {
+  height: auto;
+  width: 75vw;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  color: black;
+  margin-top: 20px;
+  padding: 3px 0px 4px 0px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.column-slide-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-self: stretch;
+  padding: 0px 50px 0px 50px;
+  margin: 40px 0px 40px 0px;
+}
+
+.column-slide-text-seq {
+  margin: 40px 0px 40px 0px;
+  padding: 0px 50px 0px 50px;
+}
+
+.column-slide-image {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  min-height: 40vw;
+}
+.slide-arrow-column {
+  margin-top: 30px;
+}
+
+@media (max-width: 450px) {
+  .header-arrow {
+    left: 45%;
+    top: 91%;
+  }
+}
+
+/*___________________ Computer Row Disposition Slides __________________________*/
+@media (min-width: 1000px) {
+  .row-slide {
+    position: relative;
+    width: 75vw;
+    height: 78vh;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "textpart imagepart";
+    color: black;
+    margin-top: 20px;
+  }
+
+  .row-slide-text {
+    grid-area: textpart;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 70px;
+    justify-self: stretch;
+  }
+
+  .row-slide-image {
+    grid-area: imagepart;
+    border-radius: 0px 5px 5px 0px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    min-height: 450px;
+  }
+
+  #third-page {
+    grid-template-areas: "imagepart textpart ";
+  }
+  #third-page-image {
+    border-radius: 5px 0px 0px 5px;
+  }
+  .slide-arrow {
+    position: absolute;
+    left: 23%;
+    bottom: 23%;
+  }
+  #third-page > .slide-arrow {
+    position: absolute;
+    right: -29%;
+    bottom: 23%;
+  }
+}
+
+/*___________________ Mobile Row Disposition Slides __________________________*/
+
+@media (max-width: 1000px) {
+  .row-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90vw;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    color: black;
+  }
+
+  .row-slide-text {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    justify-self: stretch;
+    margin: 30px 0px 30px 0px;
+    padding: 0px 50px 0px 50px;
+    order: 1;
+  }
+  .row-slide-text-seq {
+    margin-top: 20px;
+    padding: 0px 50px 0px 50px;
+  }
+
+  .row-slide-image {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vw;
+    order: 3;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  #third-page {
+    flex-direction: column;
+  }
+  #third-page > .row-slide-text {
+    margin-top: 50px;
+    padding: 0px 50px 0px 50px;
+    order: 2;
+    margin-top: 20px;
+  }
+
+  #third-page-image {
+    border-radius: 5px 5px 0px 0px;
+    order: 1;
+  }
+  #third-page-image > .slide-arrow {
+    order: 1;
+  }
+  .slide-arrow {
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    order: 2;
+  }
+  .column-slide {
+    height: auto;
+    width: 90vw;
+  }
+}
