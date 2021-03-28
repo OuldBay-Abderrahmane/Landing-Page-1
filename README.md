@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Copy this folder in your react application
+
+## Install with npm react-images, react-router-dom, react-anchor-link-smooth-scroll
+
 ## Available Scripts
 
 In the project directory, you can run:
