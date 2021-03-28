@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #F2F2F2;
+  width: 100vw;
+  justify-items: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 360;
+  font-size: 2.2em;
+}
+p {
+  font-weight: 200;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none !important;
+  color: green;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
